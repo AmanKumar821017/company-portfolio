@@ -106,7 +106,7 @@ const Footer = () => {
               </span>
 
               <span className="inline-block w-fit hover:text-white hover:cursor-pointer transition">
-                +91 98765 43210
+                +91 8533995757
               </span>
             </a>
 
@@ -128,7 +128,7 @@ const Footer = () => {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918533995757"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 text-gray-400"
