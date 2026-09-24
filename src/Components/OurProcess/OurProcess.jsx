@@ -65,13 +65,15 @@ import {
   TbCircleNumber4Filled,
 } from "react-icons/tb";
 
+import Bg1 from "../../assets/ourprocess2.jpg";
+
 const OurProcess = () => {
   const RenderSteps = steps.map((item) => {
     return (
       <div
         key={item.id}
-        className={`basis-75 ${
-          item.id % 2 === 0 ? "md:-mt-100" : ""
+        className={`basis-full sm:basis-80 md:basis-75 ${
+          item.id % 2 === 0 ? "md:-mt-24 lg:-mt-28" : ""
         }`}
       >
         {/* Circle */}
@@ -83,12 +85,16 @@ const OurProcess = () => {
             mx-auto
             bg-zinc-800
             text-white
-            w-18
-            h-18
+            w-16
+            h-16
+            sm:w-18
+            sm:h-18
             rounded-full
-            text-8xl
+            text-6xl
+            sm:text-7xl
             outline-[3px]
-            outline-offset-7
+            outline-offset-4
+            sm:outline-offset-7
             outline-zinc-800
             outline-dashed
           "
@@ -97,12 +103,12 @@ const OurProcess = () => {
         </span>
 
         {/* Heading + Paragraph */}
-        <div className="text-center mt-8">
-          <h4 className="text-2xl font-semibold text-zinc-900">
+        <div className="text-center mt-6 sm:mt-8 px-4">
+          <h4 className="text-xl sm:text-2xl font-semibold text-zinc-900">
             {item.title}
           </h4>
 
-          <p className="mt-2 text-zinc-600">
+          <p className="mt-2 text-sm sm:text-base leading-relaxed text-zinc-600 max-w-sm mx-auto">
             {item.para}
           </p>
         </div>
@@ -111,10 +117,34 @@ const OurProcess = () => {
   });
 
   return (
-    <div className="w-full min-h-screen py-10 bg-stone-100">
-
+    <div
+      className="
+        w-full
+        min-h-screen
+        py-12
+        sm:py-14
+        md:py-16
+        lg:py-20
+        bg-cover
+        bg-[center_0%]
+        bg-no-repeat
+      "
+      style={{
+        backgroundImage: `url(${Bg1})`,
+      }}
+    >
       {/* Heading */}
-      <h1 className="flex  justify-center text-4xl text-black font-semibold text-center">
+      <h1
+        className="
+          px-4
+          text-3xl
+          sm:text-4xl
+          md:text-5xl
+          text-black
+          font-semibold
+          text-center
+        "
+      >
         How We Deliver Results
       </h1>
 
@@ -123,14 +153,22 @@ const OurProcess = () => {
         className="
           grid
           grid-cols-1
+          sm:grid-cols-2
           md:grid-cols-4
-          gap-y-20
-          md:gap-x-8
-          justify-center
+          gap-y-16
+          sm:gap-y-20
+          md:gap-x-6
+          lg:gap-x-10
+          justify-items-center
           items-center
-          mt-10
-          md:mt-50
-          md:p-20
+          mt-12
+          sm:mt-16
+          md:mt-32
+          lg:mt-40
+          px-4
+          sm:px-8
+          md:px-10
+          lg:px-16
         "
       >
         {RenderSteps}

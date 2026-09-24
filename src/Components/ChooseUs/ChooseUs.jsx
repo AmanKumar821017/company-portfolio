@@ -7,7 +7,7 @@ import Real from '../../assets/Realstate.webp'
 const LatestWork = () => {
   return (
 
-    <div className='w-full min-h-90 bg-stone-200 overflow-hidden'>
+    <div className='w-full min-h-90 bg-gray-400 overflow-hidden'>
 
   <div>
     <h1 className='flex justify-center text-2xl text-zinc-800 font-semibold mt-10 text-center px-4'>
