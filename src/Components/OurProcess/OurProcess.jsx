@@ -126,7 +126,7 @@ const OurProcess = () => {
         md:py-16
         lg:py-20
         bg-cover
-        bg-[center_0%]
+        bg-position-[center_0%]
         bg-no-repeat
       "
       style={{
